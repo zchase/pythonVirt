@@ -1,0 +1,30 @@
+<username>/PythonUbuntuSimpleApp:
+  # This Basic Distelli Manifest assumes the following
+  # has been provisioned on the destination deploy server:
+  #
+  # OS: Ubuntu
+  # Installed Packages:
+  #   Python >= 2.5            [sudo apt-get update]
+  #                            [sudo apt-get install python]
+  #   Pip >= 1.4 (python-pip)  [sudo apt-get install python-pip]
+  #   virtualenv >= 1.9        [sudo apt-get install python-virtualenv]
+  #
+  
+  Env:
+    - PORT: 8005
+
+  PkgInclude:
+    - simpleapp/simpleapp.py
+    - requirements.txt
+
+  PreInstall:
+    - echo "Starting PreInstall for SimplePythonApp"
+
+  PostInstall:
+    - echo "Starting PostInstall for SimplePythonApp"
+    - virtualenv .
+    - sudo pip install -r requirements.txt
+
+  Exec:
+    - echo "Executing SimplePythonApp"
+    - exec python simpleapp/simpleapp.py -p $PORT
