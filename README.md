@@ -1,4 +1,4 @@
-# SimplePythonApp
+# PythonUbuntuSimpleApp
 
 ##Introduction:##
 This tutorial will walk you through deploying a simple Hello World Python Application to any server with <a href="https://www.distelli.com" target="_blank">Distelli</a>.
@@ -18,16 +18,16 @@ This tutorial will walk you through deploying a simple Hello World Python Applic
 You should see the following message on successful clone:
 <img src="https://monosnap.com/file/dO7WxGYQHEUzSHdpgIutwEiu6r9eqN.png">
 Then, use the cd command to enter the directory:
-<pre>cd SimplePythonApp</pre>
+<pre>cd PythonUbuntuSimpleApp</pre>
 
 2. To create an application with Distelli, enter the following command into your terminal replacing "username" with your Distelli username:
-<pre> $ distelli create username/SimplePythonApp</pre>
+<pre> $ distelli create username/PythonUbuntuSimpleApp</pre>
 You'll be prompted to login, use the email address and password associated with your Distelli account:
 <img src="https://monosnap.com/file/B5d2EA6aIUpy8XNmnf4BhbLCzzvlTK.png">
 You should see the following message on successful app creation:
 <img src="https://monosnap.com/file/reWlkTc98g3C7FcZ5XVnAozZkhXIKT.png">
 
-3. To create an environment with Distelli, <a href="https://www.distelli.com/login" target="_blank">login to your Distelli account<a>. Once logged in, you should see the Python application you just created. Select the SimplePythonApp:
+3. To create an environment with Distelli, <a href="https://www.distelli.com/login" target="_blank">login to your Distelli account<a>. Once logged in, you should see the Python application you just created. Select the PythonUbuntuSimpleApp:
 <img src="https://monosnap.com/file/Y3jmF6LY0T0bV8bySsj8MgLv0WKGht.png">
 Select the environments tab:
 <img src="https://monosnap.com/file/4hsF0MH3GVwmhJ6Qdpi4gbJe7XGEHa.png">
