@@ -1,8 +1,5 @@
 zchase/pythonTest:
 
-  Env:
-    - PORT: 8005
-
   PkgInclude:
     - simpleapp/simpleapp.py
     - requirements.txt
