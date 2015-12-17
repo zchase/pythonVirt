@@ -1,15 +1,5 @@
-<username>/PythonUbuntuSimpleApp:
-  # This Basic Distelli Manifest assumes the following
-  # has been provisioned on the destination deploy server:
-  #
-  # OS: Ubuntu
-  # Installed Packages:
-  #   Python >= 2.5            [sudo apt-get update]
-  #                            [sudo apt-get install python]
-  #   Pip >= 1.4 (python-pip)  [sudo apt-get install python-pip]
-  #   virtualenv >= 1.9        [sudo apt-get install python-virtualenv]
-  #
-  
+zchase/pythonTest:
+
   Env:
     - PORT: 8005
 
@@ -19,6 +9,10 @@
 
   PreInstall:
     - echo "Starting PreInstall for SimplePythonApp"
+    - sudo apt-get update
+    - sudo apt-get install python
+    - sudo apt-get install python-pip
+    - sudo apt-get install python-virtualenv
 
   PostInstall:
     - echo "Starting PostInstall for SimplePythonApp"
