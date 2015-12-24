@@ -1,4 +1,4 @@
-zchase/pythonTest:
+zchase/pythonVirtual:
 
   PkgInclude:
     - simpleapp/simpleapp.py
