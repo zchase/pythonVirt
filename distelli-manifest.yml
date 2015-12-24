@@ -1,4 +1,4 @@
-zchase/pythonVirtualcd .:
+zchase/pythonVirtual:
 
   PkgInclude:
     - simpleapp/simpleapp.py
