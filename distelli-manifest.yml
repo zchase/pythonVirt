@@ -1,4 +1,4 @@
-zchase/pythonVirtual:
+zchase/pythonVirtualcd .:
 
   PkgInclude:
     - simpleapp/simpleapp.py
@@ -13,9 +13,10 @@ zchase/pythonVirtual:
 
   PostInstall:
     - echo "Starting PostInstall for SimplePythonApp"
-    - virtualenv .
-    - sudo pip install -r requirements.txt
+    - virtualenv pythonEnv
+    - source pythonEnv/bin/activate
+    - pip install -r requirements.txt
 
   Exec:
     - echo "Executing SimplePythonApp"
-    - exec python simpleapp/simpleapp.py -p $PORT
+    - exec python simpleapp/simpleapp.py -p 8000
