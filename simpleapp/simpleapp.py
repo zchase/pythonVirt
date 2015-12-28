@@ -12,13 +12,7 @@ start = int(round(time.time()))
 @app.route("/")
 def hello_world():
 
-    curtime = int(round(time.time()))
-    elapsed = curtime - start
-    seconds = int((elapsed) % 60)
-    minutes = int(((elapsed / (60)) % 60))
-    hours   = int(((elapsed / (60*60)) % 24));
-
-    return "<h1>Hello World from an updated and redeployed Python Application!</h1><i>Uptime: %02d:%02d:%02d" % (hours, minutes, seconds)
+    return "<h1>Hello World from an updated and redeployed Python Application!</h1>"
 
 if __name__ == '__main__':
     parser = optparse.OptionParser(usage="python simpleapp.py -p <port>")
