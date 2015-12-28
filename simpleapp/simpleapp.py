@@ -18,7 +18,7 @@ def hello_world():
     minutes = int(((elapsed / (60)) % 60))
     hours   = int(((elapsed / (60*60)) % 24));
 
-    return "<h1>Hello World from Distelli!</h1><i>Uptime: %02d:%02d:%02d" % (hours, minutes, seconds)
+    return "<h1>Hello World from an updated and redeployed Python Application!</h1><i>Uptime: %02d:%02d:%02d" % (hours, minutes, seconds)
 
 if __name__ == '__main__':
     parser = optparse.OptionParser(usage="python simpleapp.py -p <port>")
