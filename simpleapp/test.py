@@ -3,12 +3,12 @@
 import unittest
 from simpleapp import hello_world
 
-class PrimesTestCase(unittest.TestCase):
+class HelloWorldTestCase(unittest.TestCase):
     """Tests for `simpleapp.py`."""
 
     def test_is_output_hw(self):
         """Is the output of your Python Application what you expect?"""
-        self.assertTrue(hello_world() == "<h1>ello World from an updated and redeployed Python Application!</h1>")
+        self.assertTrue(hello_world() == "Hello World from Distelli!")
 
 if __name__ == '__main__':
     unittest.main()
