@@ -8,6 +8,7 @@ class HelloWorldTestCase(unittest.TestCase):
 
     def test_is_output_hw(self):
         """Is the output of your Python Application what you expect?"""
+        print(hello_world())
         self.assertTrue(hello_world() == "Hello World from Distelli!")
 
 if __name__ == '__main__':
